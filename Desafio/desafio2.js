@@ -17,20 +17,22 @@ IMC adulto condição:
 - Acima de 40 obesidade Grave
  */
 
-const pesoEmKG = 53;
+const peso = 53;
 const altura = 1.70;
 
-const imc = pesoEmKG / (altura * altura);
+const imc = peso / Math.pow(altura, 2);
+
+
 console.log('Seu IMC é: ' + imc.toFixed(2));
 
-if (imc <= 18.5) {
+if (imc < 18.5) {
     console.log('Você esta Abaixo do peso');
-} else if (imc > 18.5 && imc <= 25) {
+} else if (imc >= 18.5 && imc < 25) {
     console.log('Você esta no Peso Normal');
-} else if (imc > 25 && imc <= 30) {
+} else if (imc > 25 && imc < 30) {
     console.log('Você esta Acima do peso');
-} else if (imc > 31 && imc <= 40) {
+} else if (imc > 31 && imc < 40) {
     console.log('Você esta Obeso');
 } else {
-console.log('Você esta tem Obesidade Grave');
+    console.log('Você esta tem Obesidade Grave');
 }
