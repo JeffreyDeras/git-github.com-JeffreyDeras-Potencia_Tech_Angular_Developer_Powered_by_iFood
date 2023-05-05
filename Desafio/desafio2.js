@@ -17,8 +17,8 @@ IMC adulto condição:
 - Acima de 40 obesidade Grave
  */
 
-const peso = 53;
-const altura = 1.70;
+const peso = 63;
+const altura = 1.75;
 
 const imc = peso / Math.pow(altura, 2);
 
