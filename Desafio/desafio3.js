@@ -12,19 +12,15 @@ Codigo condição de pagamento
 - Em duas vezes Preço normal de etiqueta sem juros.
 - Acima de duas vezes, preço de etiqueta mais 10% de juros.*/
 
-const preçoProduto = 10;
-const metodoDePagamento = 'Mais2x'
+const preçoProduto = 100;
+const metodoDePagamento = 4;
 
-if (metodoDePagamento === 'Vista') {
-    const pagVista = preçoProduto * 0.9;
-    console.log(pagVista);
-} else if (metodoDePagamento === 'Dinheiro') {
-    const pagDinheiro = preçoProduto * 0.85;
-    console.log(pagDinheiro);
-} else if (metodoDePagamento === '2x'){
-    const pag2x = preçoProduto / 2;
-    console.log(pag2x);
+if (metodoDePagamento === 1) {
+         console.log(preçoProduto - (preçoProduto * 0.10));
+} else if (metodoDePagamento === 2) {
+    console.log(preçoProduto - (preçoProduto * 0.15))
+} else if (metodoDePagamento === 3){
+    console.log(preçoProduto);
 }else {
-    const pagMais2x = preçoProduto /0.9;
-    console.log(pagMais2x.toFixed(2));
+    console.log(preçoProduto + (preçoProduto * 0.10))
 }
