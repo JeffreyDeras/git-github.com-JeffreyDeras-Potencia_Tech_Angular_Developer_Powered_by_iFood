@@ -21,6 +21,8 @@ const pessoa2 = new pessoa('Andrew', 32);
 
 compararPessoas(pessoa1, pessoa2);
 
+console.log('${pessoa1.nome}')
+
 
 
 
