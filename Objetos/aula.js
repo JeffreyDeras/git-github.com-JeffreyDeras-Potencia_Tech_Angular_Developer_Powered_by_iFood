@@ -1,27 +1,25 @@
-class pessoa {
+class Pessoa {
         constructor(nome, idade) {
                 this.nome = nome;
                 this.idade = idade;
-        }}
-
+        }
+}
 
 function compararPessoas(pessoa1, pessoa2) {
-        
-if (pessoa1.idade > pessoa2.idade) {
-        console.log(pessoa1.nome + 'é mais velhor que' + pessoa2.nome);
-}else if(pessoa1.idade < pessoa2.idade){
-        console.log(pessoa1.nome + ' é mais nova que ' + pessoa2.nome);
-}else{
-        console.log('${pessoa1.nome}');
+        if (pessoa1.idade > pessoa2.idade) {
+                return `${pessoa1.nome} é mais velho(a) que ${pessoa2.nome}`;
+        } else if (pessoa1.idade < pessoa2.idade) {
+                return `${pessoa1.nome} é mais novo(a) que ${pessoa2.nome}`;
+        } else {
+                return `${pessoa1.nome} tem a mesma idade que ${pessoa2.nome}`;
+        }
 }
-}
 
-const pessoa1 = new pessoa('Jeffrey', 32);
-const pessoa2 = new pessoa('Andrew', 32);
+const pessoa1 = new Pessoa('Jeffrey', 32);
+const pessoa2 = new Pessoa('Andrew', 32);
 
-compararPessoas(pessoa1, pessoa2);
+console.log(compararPessoas(pessoa1, pessoa2));
 
-console.log('${pessoa1.nome}')
 
 
 
