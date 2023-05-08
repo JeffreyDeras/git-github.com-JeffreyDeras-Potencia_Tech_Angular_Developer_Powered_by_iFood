@@ -16,7 +16,9 @@ IMC adulto condição:
 - Entre 31 e 40 obeso.
 - Acima de 40 obesidade Grave
 */
-function main() {
+
+//main
+(function (){
     
     const peso = 91;
     const altura = 1.70;
@@ -24,9 +26,7 @@ function main() {
     const imc = calcularImc(peso, altura);
     console.log('Seu IMC é de: '+ imc.toFixed(2));
     console.log(classificarImc(imc));
-}
-
-main ();
+}) ();
 
 //end-função main//
 
