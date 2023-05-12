@@ -1,0 +1,39 @@
+
+// Destrução //
+
+//const funcoes = require('./funcoes-aulixiares') ;
+
+//console.log(funcoes.gets());
+
+const { gets, print } = require('./funcoes-auxiliares');
+/* Uma sala contem 5 alunos e para cada foi sorteado um numero de 1 -100.
+Faça um programa que receba os 5 numeros sorteados para os alunos e mostre
+o maior numero sorteado.
+Dados de entrada:
+*Conforme funçao auxiliar.
+
+Dados de saida:
+*Conforme funçao auxiliar.
+*/
+const alunos = gets ();
+const numerosSorteados = [];
+
+for (let i = 0; i < alunos; i++) {
+    const numeroSorteado = gets();
+    numerosSorteados.push(numeroSorteado);
+}
+
+let maiorValor = 0;
+
+for (let i = 0; i < numerosSorteados.length; i++) {
+    const numeroSorteado = numerosSorteados[i];
+
+    if (numeroSorteado > maiorValor) {
+        maiorValor = numeroSorteado;
+    }
+
+}
+
+print(maiorValor);
+
+
